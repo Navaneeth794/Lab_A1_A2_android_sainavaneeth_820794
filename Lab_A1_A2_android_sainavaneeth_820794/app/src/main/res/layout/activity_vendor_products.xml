@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VendorProducts">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Vendor"
+                android:textSize="50sp"
+                android:layout_width="408dp"
+                android:layout_height="72dp" android:id="@+id/textView" tools:ignore="MissingConstraints"/>
+        <Button
+                android:text="Cement"
+                android:layout_width="146dp"
+                android:layout_height="42dp" android:id="@+id/cement"
+                tools:ignore="MissingConstraints"/>
+        <Button
+                android:text="Steel"
+                android:layout_width="146dp"
+                android:layout_height="42dp" android:id="@+id/steel"
+                tools:ignore="MissingConstraints"/>
+        <Button
+                android:text="Bricks"
+                android:layout_width="146dp"
+                android:layout_height="42dp" android:id="@+id/bricks"
+                tools:ignore="MissingConstraints"/>
+        <Button
+                android:text="Roofing Materials"
+                android:layout_width="146dp"
+                android:layout_height="42dp" android:id="@+id/mabati"
+                tools:ignore="MissingConstraints"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp">
+                <TextView
+                        android:text="Cement(bags)"
+                        android:layout_width="0dp"
+                        android:layout_height="34dp" android:id="@+id/cementAdd" android:layout_weight="1"/>
+                <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="each cost 650"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/cementEditNumber" android:layout_weight="1"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:hint="Total"
+                        android:layout_height="31dp" android:id="@+id/totalCement" android:layout_weight="1"
+                        android:editable="false"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp">
+                <TextView
+                        android:text="Steel(Rolls)"
+                        android:layout_width="0dp"
+                        android:layout_height="34dp" android:id="@+id/steelAdd" android:layout_weight="1"
+                        android:baselineAligned="false"/>
+                <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="each cost 2000"
+                        android:ems="10"
+                        android:id="@+id/steelEditNumber" android:layout_weight="1" android:baselineAligned="false"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:hint="Total"
+                        android:layout_height="wrap_content" android:id="@+id/totalSteel" android:layout_weight="1"
+                        android:editable="false" android:baselineAligned="false"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp">
+                <TextView
+                        android:text="Bricks(Bales)"
+                        android:layout_width="0dp"
+                        android:layout_height="34dp" android:id="@+id/brickAdd" android:layout_weight="1"/>
+                <EditText
+                        android:layout_width="0dp"
+                        android:hint="each cost 1000"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/brickEditNumber" android:layout_weight="1"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:hint="Total"
+                        android:layout_height="wrap_content" android:id="@+id/totalBricks" android:layout_weight="1"
+                        android:editable="false"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" android:id="@+id/linearLayout">
+                <TextView
+                        android:text="Roofing(Sheets)"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/mabatiAdd"
+                        tools:layout_conversion_absoluteHeight="34dp" tools:layout_editor_absoluteY="440dp"
+                        tools:layout_editor_absoluteX="0dp" tools:layout_conversion_absoluteWidth="98dp"
+                        android:layout_weight="1"/>
+                <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="each cost 1500"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/mabatiEditNumber" tools:layout_conversion_absoluteHeight="45dp"
+                        tools:layout_editor_absoluteY="426dp" tools:layout_editor_absoluteX="98dp"
+                        tools:layout_conversion_absoluteWidth="247dp" android:layout_weight="1"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:hint="Total"
+                        android:layout_height="wrap_content" android:id="@+id/totalSheets"
+                        android:editable="false" tools:layout_conversion_absoluteHeight="19dp"
+                        tools:layout_editor_absoluteY="440dp" tools:layout_editor_absoluteX="345dp"
+                        tools:layout_conversion_absoluteWidth="66dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
